@@ -7,6 +7,7 @@ export function ThemeSwitch() {
 	const labelStyle = clsx(
 		"theme1:text-theme1t1 theme2:text-theme2t0 theme3:text-theme3t0",
 		"font-semibold tracking-widest font-league-spartan",
+		"transition-colors duration-500",
 	);
 
 	return (
@@ -40,7 +41,8 @@ export function ThemeSwitch() {
 							"w-4 h-4 rounded-full",
 							"theme1:bg-theme1k2 theme2:bg-theme2k2 theme3:bg-theme3k2",
 							"hover:theme1:bg-[#f96c5b] hover:theme2:bg-[#ff8b38] hover:theme3:bg-[#94fff9]",
-							"theme1:translate-x-0 theme2:translate-x-[150%] theme3:translate-x-[300%] duration-500",
+							"theme1:translate-x-0 theme2:translate-x-[150%] theme3:translate-x-[300%]",
+							"transition-transform transition-colors duration-500",
 							"cursor-pointer",
 						)}
 						onClick={toggleTheme}

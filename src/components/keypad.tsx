@@ -8,6 +8,7 @@ export function Keypad() {
 				"grid grid-cols-4 gap-5 p-6 rounded-lg",
 				"max-w-[480px]",
 				"theme1:bg-theme1b1 theme2:bg-theme2b1 theme3:bg-theme3b1",
+				"transition-colors duration-500",
 			)}
 		>
 			<Button variant="primary">7</Button>

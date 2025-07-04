@@ -6,6 +6,7 @@ export function Logo() {
 			className={clsx(
 				"text-3xl font-bold font-league-spartan",
 				"theme1:text-theme1t1 theme2:text-theme2t0 theme3:text-theme3t0",
+				"transition-colors duration-500",
 			)}
 		>
 			calc

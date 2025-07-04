@@ -33,6 +33,7 @@ export function Button({ className, children, onClick, variant }: ButtonProps) {
 				"pt-2 pb-0.5 rounded-lg cursor-pointer",
 				"text-center font-bold font-league-spartan",
 				"active:translate-y-[5px]",
+				"transition-colors duration-500",
 				className,
 			)}
 			onClick={onClick}
