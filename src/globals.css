@@ -41,6 +41,10 @@
 	--font-league-spartan: "League Spartan Variable";
 }
 
+* {
+	transition: color background-color 0.5s ease-in-out;
+}
+
 #root {
 	height: 100vh;
 	font-family: var(--font-league-spartan);
