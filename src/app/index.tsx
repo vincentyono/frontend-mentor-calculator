@@ -18,7 +18,7 @@ export default function App() {
 				<ThemeSwitch />
 			</header>
 			<main className="flex flex-col gap-6 calculator-width">
-				<Screen>0</Screen>
+				<Screen />
 				<Keypad />
 			</main>
 		</div>
