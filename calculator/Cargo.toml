@@ -3,7 +3,10 @@ name = "calculator"
 version = "0.1.0"
 edition = "2024"
 
+[lib]
+crate-type = ["cdylib"]
+
 [dependencies]
 regex = "1.11.1"
-rust_decimal = "1.37.2"
+rust_decimal = { version = "1.37.2", features = ["macros"] }
 wasm-bindgen = "0.2.100"
