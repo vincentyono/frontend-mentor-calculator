@@ -1,10 +1,6 @@
 import clsx from "clsx/lite";
 import { Button } from "@/components/button";
 
-const PRIMARY = "primary";
-const SECONDARY = "secondary";
-const ATTENTION = "attention";
-
 export function Keypad() {
 	return (
 		<div
