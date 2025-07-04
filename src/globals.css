@@ -41,8 +41,9 @@
 	--font-league-spartan: "League Spartan Variable";
 }
 
-* {
-	transition: color background-color 0.5s ease-in-out;
+.calculator-width {
+	max-width: 600px;
+	min-width: 380px;
 }
 
 #root {
