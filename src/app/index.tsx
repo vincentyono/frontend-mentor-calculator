@@ -5,6 +5,7 @@ import { Logo } from "@/components/logo";
 import { Screen } from "@/components/screen";
 import { ThemeSwitch } from "@/components/theme-switch";
 import init from "../../calculator/pkg/calculator";
+import { Footer } from "@/components/footer";
 
 export default function App() {
 	useEffect(() => {
@@ -28,6 +29,7 @@ export default function App() {
 				<Screen />
 				<Keypad />
 			</main>
+			<Footer />
 		</div>
 	);
 }
