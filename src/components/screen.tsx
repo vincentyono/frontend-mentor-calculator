@@ -1,10 +1,8 @@
 import clsx from "clsx/lite";
+import { useCalculator } from "@/hooks/use-calculator";
 
-interface ScreenProps {
-	children: React.ReactNode;
-}
-
-export function Screen({ children }: ScreenProps) {
+export function Screen() {
+	const n = useCalculator((state) => state.n);
 	return (
 		<div
 			id="calculator-screen"
@@ -23,7 +21,7 @@ export function Screen({ children }: ScreenProps) {
 					"transition-colors duration-500",
 				)}
 			>
-				{children}
+				{n}
 			</h2>
 		</div>
 	);

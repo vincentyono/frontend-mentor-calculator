@@ -1,7 +1,9 @@
 import clsx from "clsx/lite";
 import { Button } from "@/components/button";
+import { useCalculator } from "@/hooks/use-calculator";
 
 export function Keypad() {
+	const { addCharacter, calc, deleteCharacter, reset } = useCalculator();
 	return (
 		<div
 			className={clsx(
@@ -11,26 +13,150 @@ export function Keypad() {
 				"transition-colors duration-500",
 			)}
 		>
-			<Button variant="primary">7</Button>
-			<Button variant="primary">8</Button>
-			<Button variant="primary">9</Button>
-			<Button variant="secondary">DEL</Button>
-			<Button variant="primary">4</Button>
-			<Button variant="primary">5</Button>
-			<Button variant="primary">6</Button>
-			<Button variant="primary">+</Button>
-			<Button variant="primary">1</Button>
-			<Button variant="primary">2</Button>
-			<Button variant="primary">3</Button>
-			<Button variant="primary">-</Button>
-			<Button variant="primary">.</Button>
-			<Button variant="primary">0</Button>
-			<Button variant="primary">/</Button>
-			<Button variant="primary">x</Button>
-			<Button variant="secondary" className={`col-span-2 pt-3 pb-1.5`}>
+			<Button
+				variant="primary"
+				onClick={() => {
+					addCharacter("7");
+				}}
+			>
+				7
+			</Button>
+			<Button
+				variant="primary"
+				onClick={() => {
+					addCharacter("8");
+				}}
+			>
+				8
+			</Button>
+			<Button
+				variant="primary"
+				onClick={() => {
+					addCharacter("9");
+				}}
+			>
+				9
+			</Button>
+			<Button
+				variant="secondary"
+				onClick={() => {
+					deleteCharacter();
+				}}
+			>
+				DEL
+			</Button>
+			<Button
+				variant="primary"
+				onClick={() => {
+					addCharacter("4");
+				}}
+			>
+				4
+			</Button>
+			<Button
+				variant="primary"
+				onClick={() => {
+					addCharacter("5");
+				}}
+			>
+				5
+			</Button>
+			<Button
+				variant="primary"
+				onClick={() => {
+					addCharacter("6");
+				}}
+			>
+				6
+			</Button>
+			<Button
+				variant="primary"
+				onClick={() => {
+					addCharacter("+");
+				}}
+			>
+				+
+			</Button>
+			<Button
+				variant="primary"
+				onClick={() => {
+					addCharacter("1");
+				}}
+			>
+				1
+			</Button>
+			<Button
+				variant="primary"
+				onClick={() => {
+					addCharacter("2");
+				}}
+			>
+				2
+			</Button>
+			<Button
+				variant="primary"
+				onClick={() => {
+					addCharacter("3");
+				}}
+			>
+				3
+			</Button>
+			<Button
+				variant="primary"
+				onClick={() => {
+					addCharacter("-");
+				}}
+			>
+				-
+			</Button>
+			<Button
+				variant="primary"
+				onClick={() => {
+					addCharacter(".");
+				}}
+			>
+				.
+			</Button>
+			<Button
+				variant="primary"
+				onClick={() => {
+					addCharacter("0");
+				}}
+			>
+				0
+			</Button>
+			<Button
+				variant="primary"
+				onClick={() => {
+					addCharacter("/");
+				}}
+			>
+				/
+			</Button>
+			<Button
+				variant="primary"
+				onClick={() => {
+					addCharacter("x");
+				}}
+			>
+				x
+			</Button>
+			<Button
+				variant="secondary"
+				className={`col-span-2 pt-3 pb-1.5`}
+				onClick={() => {
+					reset();
+				}}
+			>
 				RESET
 			</Button>
-			<Button variant="attention" className={`col-span-2  pt-3 pb-1.5`}>
+			<Button
+				variant="attention"
+				className={`col-span-2  pt-3 pb-1.5`}
+				onClick={() => {
+					calc();
+				}}
+			>
 				=
 			</Button>
 		</div>
