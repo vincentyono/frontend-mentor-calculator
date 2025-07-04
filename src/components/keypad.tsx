@@ -4,11 +4,11 @@ import { useCalculator } from "@/hooks/use-calculator";
 
 export function Keypad() {
 	const { addCharacter, calc, deleteCharacter, reset } = useCalculator();
+
 	return (
 		<div
 			className={clsx(
-				"grid grid-cols-4 gap-5 p-6 rounded-lg",
-				"max-w-[480px]",
+				"grid grid-cols-4 gap-5 max-[525px]:gap-3.5 p-6 rounded-lg",
 				"theme1:bg-theme1b1 theme2:bg-theme2b1 theme3:bg-theme3b1",
 				"transition-colors duration-500",
 			)}
@@ -42,6 +42,7 @@ export function Keypad() {
 				onClick={() => {
 					deleteCharacter();
 				}}
+				className={`max-[525px]:text-lg`}
 			>
 				DEL
 			</Button>
@@ -143,7 +144,7 @@ export function Keypad() {
 			</Button>
 			<Button
 				variant="secondary"
-				className={`col-span-2 pt-3 pb-1.5`}
+				className={`col-span-2 pt-3 pb-1.5 max-[525px]:pt-4 max-[525px]:pb-2.5 max-[525px]:text-lg`}
 				onClick={() => {
 					reset();
 				}}
@@ -152,7 +153,7 @@ export function Keypad() {
 			</Button>
 			<Button
 				variant="attention"
-				className={`col-span-2  pt-3 pb-1.5`}
+				className={`col-span-2 pt-3 pb-1.5 max-[525px]:pt-4 max-[525px]:pb-2.5 max-[525px]:text-lg`}
 				onClick={() => {
 					calc();
 				}}

@@ -5,6 +5,7 @@
 @custom-variant theme3 (&:where([data-theme=theme3], [data-theme=theme3] *));
 
 @theme {
+	----breakpoint-mobile: 375px;
 	--color-theme1b0: hsl(222, 26%, 31%);
 	--color-theme1b1: hsl(223, 31%, 20%);
 	--color-theme1b2: hsl(224, 36%, 15%);
@@ -39,11 +40,6 @@
 	--color-theme3t1: hsl(198, 20%, 13%);
 	--color-theme3t2: hsl(0, 0%, 100%);
 	--font-league-spartan: "League Spartan Variable";
-}
-
-.calculator-width {
-	max-width: 600px;
-	min-width: 380px;
 }
 
 #root {

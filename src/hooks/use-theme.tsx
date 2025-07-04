@@ -45,6 +45,8 @@ export function useTheme() {
 	useEffect(() => {
 		if (localStorage.theme) {
 			dispatch({ type: localStorage.theme });
+		} else {
+			dispatch({ type: "theme1" });
 		}
 	}, []);
 
