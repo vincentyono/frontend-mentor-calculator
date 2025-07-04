@@ -1,10 +1,16 @@
+import init from "calculator";
 import clsx from "clsx/lite";
+import { useEffect } from "react";
 import { Keypad } from "@/components/keypad";
 import { Logo } from "@/components/logo";
 import { Screen } from "@/components/screen";
 import { ThemeSwitch } from "@/components/theme-switch";
 
 export default function App() {
+	useEffect(() => {
+		init();
+	}, []);
+
 	return (
 		<div
 			className={clsx(
