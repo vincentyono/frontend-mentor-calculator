@@ -1,5 +1,9 @@
-import { add_character, delete_character, calculate } from "calculator";
 import { create } from "zustand";
+import {
+	add_character,
+	calculate,
+	delete_character,
+} from "../../calculator/pkg/calculator";
 
 interface CalculatorState {
 	n: string;

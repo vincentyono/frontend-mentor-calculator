@@ -10,7 +10,6 @@ export default defineConfig({
 	resolve: {
 		alias: {
 			"@": path.resolve(__dirname, "src"),
-			calculator: path.resolve(__dirname, "calculator/pkg"),
 		},
 	},
 });
