@@ -1,5 +1,6 @@
 import type { Preview } from "@storybook/react-vite";
 import type { ThemeConfig } from "storybook-addon-data-theme-switcher";
+import "@/globals.css";
 
 export const initialGlobals = {
 	dataThemes: {
