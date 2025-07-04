@@ -43,4 +43,5 @@
 
 #root {
 	height: 100vh;
+	font-family: var(--font-league-spartan);
 }

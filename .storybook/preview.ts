@@ -1,6 +1,7 @@
 import type { Preview } from "@storybook/react-vite";
 import type { ThemeConfig } from "storybook-addon-data-theme-switcher";
 import "@/globals.css";
+import "@fontsource-variable/league-spartan/wght.css";
 
 export const initialGlobals = {
 	dataThemes: {
