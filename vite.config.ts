@@ -8,7 +8,7 @@ export default defineConfig({
 	plugins: [wasm(), tailwindcss(), react()],
 	resolve: {
 		alias: {
-			"@": "./src",
+			"@": "./src/",
 		},
 	},
 });

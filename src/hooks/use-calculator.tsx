@@ -3,7 +3,7 @@ import {
 	add_character,
 	calculate,
 	delete_character,
-} from "../../calculator/pkg/calculator";
+} from "./calculator/pkg/calculator";
 
 interface CalculatorState {
 	n: string;

@@ -4,7 +4,7 @@ import { Keypad } from "@/components/keypad";
 import { Logo } from "@/components/logo";
 import { Screen } from "@/components/screen";
 import { ThemeSwitch } from "@/components/theme-switch";
-import init from "../../calculator/pkg/calculator";
+import init from "./calculator/pkg/calculator";
 
 export default function App() {
 	useEffect(() => {
